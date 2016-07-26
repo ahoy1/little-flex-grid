@@ -1,17 +1,18 @@
 /* start the good stuff  */
-//responsive breakpoints
-// $bp-s: 490px;
-// $bp-m: 768px;
-// $bp-l: 992px;
-// $bp-xl: 1200px;
-
-
+/*responsive breakpoints  are em based. This lets our layout change and flow in response to the user's 
+browser settings. If you really want or need pixels, the rough equivalents are below.
+ */
 $bp-s: 30em;
 $bp-m: 48em;
 $bp-l: 62em;
 $bp-xl: 75em;
 
-//gutter width
+/* $bp-s: 490px;
+$bp-m: 768px;
+$bp-l: 992px;
+$bp-xl: 1200px; */
+
+//gutter width. Gutters make heavy use of the css calc operation. Set your gutter width here once.
 $gutter: 10px;
 
 .container{
@@ -40,7 +41,7 @@ $gutter: 10px;
   display:flex;
   flex-direction:row;
   flex-wrap:wrap;
-  
+  align-items:stretch;
   
   > *{
     flex-grow:1;
@@ -50,6 +51,27 @@ $gutter: 10px;
   &.flex-column {
     flex-direction:column;
   }  
+  
+  &.flex-align-center{
+    align-items:center;
+  }
+  
+  &.flex-align-start{
+    align-items:flex-start;
+  }
+  
+  &.flex-align-end{
+    align-items:flex-end;
+  }
+  
+  &.flex-nowrap{
+    flex-wrap:nowrap;
+  }
+  
+  &.flex-center{
+    align-items:center;
+    justify-content:center;
+  }
 }
 
 //item styles
@@ -311,246 +333,511 @@ $gutter: 10px;
         margin:5px 5px;
   }
     .item-xs-1,  {
-    width: calc( (100% / 12) - 10px);
+    width: calc( (100% / 12) - $gutter);
   }
 
   .item-xs-2 {
-    width: calc( (100% / 6) - 10px);
+    width: calc( (100% / 6) - $gutter);
   }
 
   .item-xs-3 {
-    width: calc( 25% - 10px);
+    width: calc( 25% - $gutter);
   }
 
   .item-xs-4 {
-    width: calc( (100% / 3) - 10px);
+    width: calc( (100% / 3) - $gutter);
   }
 
   .item-xs-5 {
-    width: calc( (500% / 12) - 10px);
+    width: calc( (500% / 12) - $gutter);
   }
 
   .item-xs-6 {
-    width: calc( 50% - 10px);
+    width: calc( 50% - $gutter);
   }
 
   .item-xs-7 {
-    width: calc( (700% / 12) - 10px);
+    width: calc( (700% / 12) - $gutter);
   }
 
   .item-xs-8 {
-    width: calc( (800% / 12) - 10px);
+    width: calc( (800% / 12) - $gutter);
   }
 
   .item-xs-9 {
-    width: calc( (900% / 12) - 10px);
+    width: calc( (900% / 12) - $gutter);
   }
 
   .item-xs-10 {
-    width: calc( (1000% / 12) - 10px);
+    width: calc( (1000% / 12) - $gutter);
   }
 
   .item-xs-11 {
-    width: calc( (1100% / 12) - 10px);
+    width: calc( (1100% / 12) - $gutter);
   }
 
   .item-xs-12 {
-    width: calc(100% - 10px);
+    width: calc(100% - $gutter);
   }
   @media(min-width:$bp-s){
     .item-s-1,  {
-      width: calc( (100% / 12) - 10px);
+      width: calc( (100% / 12) - $gutter);
     }
 
     .item-s-2 {
-      width: calc( (100% / 6) - 10px);
+      width: calc( (100% / 6) - $gutter);
     }
 
     .item-s-3 {
-      width: calc( 25% - 10px);
+      width: calc( 25% - $gutter);
     }
 
     .item-s-4 {
-      width: calc( (100% / 3) - 10px);
+      width: calc( (100% / 3) - $gutter);
     }
 
     .item-s-5 {
-      width: calc( (500% / 12) - 10px);
+      width: calc( (500% / 12) - $gutter);
     }
 
     .item-s-6 {
-      width: calc( 50% - 10px);
+      width: calc( 50% - $gutter);
     }
 
     .item-s-7 {
-      width: calc( (700% / 12) - 10px);
+      width: calc( (700% / 12) - $gutter);
     }
 
     .item-s-8 {
-      width: calc( (800% / 12) - 10px);
+      width: calc( (800% / 12) - $gutter);
     }
 
     .item-s-9 {
-      width: calc( (900% / 12) - 10px);
+      width: calc( (900% / 12) - $gutter);
     }
 
     .item-s-10 {
-      width: calc( (1000% / 12) - 10px);
+      width: calc( (1000% / 12) - $gutter);
     }
 
     .item-s-11 {
-      width: calc( (1100% / 12) - 10px);
+      width: calc( (1100% / 12) - $gutter);
     }
 
     .item-s-12 {
-      width: calc(100% - 10px);
+      width: calc(100% - $gutter);
     }
   }
   @media(min-width:$bp-m){
     .item-m-1,  {
-      width: calc( (100% / 12) - 10px);
+      width: calc( (100% / 12) - $gutter);
     }
 
     .item-m-2 {
-      width: calc( (100% / 6) - 10px);
+      width: calc( (100% / 6) - $gutter);
     }
 
     .item-m-3 {
-      width: calc( 25% - 10px);
+      width: calc( 25% - $gutter);
     }
 
     .item-m-4 {
-      width: calc( (100% / 3) - 10px);
+      width: calc( (100% / 3) - $gutter);
     }
 
     .item-m-5 {
-      width: calc( (500% / 12) - 10px);
+      width: calc( (500% / 12) - $gutter);
     }
 
     .item-m-6 {
-      width: calc( 50% - 10px);
+      width: calc( 50% - $gutter);
     }
 
     .item-m-7 {
-      width: calc( (700% / 12) - 10px);
+      width: calc( (700% / 12) - $gutter);
     }
 
     .item-m-8 {
-      width: calc( (800% / 12) - 10px);
+      width: calc( (800% / 12) - $gutter);
     }
 
     .item-m-9 {
-      width: calc( (900% / 12) - 10px);
+      width: calc( (900% / 12) - $gutter);
     }
 
     .item-m-10 {
-      width: calc( (1000% / 12) - 10px);
+      width: calc( (1000% / 12) - $gutter);
     }
 
     .item-m-11 {
-      width: calc( (1100% / 12) - 10px);
+      width: calc( (1100% / 12) - $gutter);
     }
 
     .item-m-12 {
-      width: calc(100% - 10px);
+      width: calc(100% - $gutter);
     }
   }
   @media(min-width:$bp-l){
     .item-l-1,  {
-      width: calc( (100% / 12) - 10px);
+      width: calc( (100% / 12) - $gutter);
     }
 
     .item-l-2 {
-      width: calc( (100% / 6) - 10px);
+      width: calc( (100% / 6) - $gutter);
     }
 
     .item-l-3 {
-      width: calc( 25% - 10px);
+      width: calc( 25% - $gutter);
     }
 
     .item-l-4 {
-      width: calc( (100% / 3) - 10px);
+      width: calc( (100% / 3) - $gutter);
     }
 
     .item-l-5 {
-      width: calc( (500% / 12) - 10px);
+      width: calc( (500% / 12) - $gutter);
     }
 
     .item-l-6 {
-      width: calc( 50% - 10px);
+      width: calc( 50% - $gutter);
     }
 
     .item-l-7 {
-      width: calc( (700% / 12) - 10px);
+      width: calc( (700% / 12) - $gutter);
     }
 
     .item-l-8 {
-      width: calc( (800% / 12) - 10px);
+      width: calc( (800% / 12) - $gutter);
     }
 
     .item-l-9 {
-      width: calc( (900% / 12) - 10px);
+      width: calc( (900% / 12) - $gutter);
     }
 
     .item-l-10 {
-      width: calc( (1000% / 12) - 10px);
+      width: calc( (1000% / 12) - $gutter);
     }
 
     .item-l-11 {
-      width: calc( (1100% / 12) - 10px);
+      width: calc( (1100% / 12) - $gutter);
     }
 
     .item-l-12 {
-      width: calc(100% - 10px);
+      width: calc(100% - $gutter);
     }
   }
   @media(min-width:$bp-xl){
     .item-xl-1,  {
-      width: calc( (100% / 12) - 10px);
+      width: calc( (100% / 12) - $gutter);
     }
 
     .item-xl-2 {
-      width: calc( (100% / 6) - 10px);
+      width: calc( (100% / 6) - $gutter);
     }
 
     .item-xl-3 {
-      width: calc( 25% - 10px);
+      width: calc( 25% - $gutter);
     }
 
     .item-xl-4 {
-      width: calc( (100% / 3) - 10px);
+      width: calc( (100% / 3) - $gutter);
     }
 
     .item-xl-5 {
-      width: calc( (500% / 12) - 10px);
+      width: calc( (500% / 12) - $gutter);
     }
 
     .item-xl-6 {
-      width: calc( 50% - 10px);
+      width: calc( 50% - $gutter);
     }
 
     .item-xl-7 {
-      width: calc( (700% / 12) - 10px);
+      width: calc( (700% / 12) - $gutter);
     }
 
     .item-xl-8 {
-      width: calc( (800% / 12) - 10px);
+      width: calc( (800% / 12) - $gutter);
     }
 
     .item-xl-9 {
-      width: calc( (900% / 12) - 10px);
+      width: calc( (900% / 12) - $gutter);
     }
 
     .item-xl-10 {
-      width: calc( (1000% / 12) - 10px);
+      width: calc( (1000% / 12) - $gutter);
     }
 
     .item-xl-11 {
-      width: calc( (1100% / 12) - 10px);
+      width: calc( (1100% / 12) - $gutter);
     }
 
     .item-xl-12 {
-      width: calc(100% - 10px);
+      width: calc(100% - $gutter);
     }
   }
 }
+
+.item-order-xs-0{
+  order:0;
+}
+
+.item-order-xs-1 {
+  order:1;
+}
+
+.item-order-xs-2 {
+  order:2;
+}
+
+.item-order-xs-3 {
+  order:3;
+}
+
+.item-order-xs-4 {
+  order:4;
+}
+
+.item-order-xs-5 {
+  order:5;
+}
+
+.item-order-xs-6 {
+  order:6;
+}
+
+.item-order-xs-7 {
+  order:7;
+}
+
+.item-order-xs-8 {
+  order:8;
+}
+
+.item-order-xs-9 {
+  order:9;
+}
+
+.item-order-xs-10 {
+  order:10;
+}
+
+.item-order-xs-11 {
+  order:11;
+}
+
+.item-order-xs-12 {
+  order:12;
+}
+
+@media (min-width:$bp-s){
+  .item-order-x-0{
+    order:0;
+  }
+  .item-order-s-1 {
+    order:1;
+  }
+
+  .item-order-s-2 {
+    order:2;
+  }
+
+  .item-order-s-3 {
+    order:3;
+  }
+
+  .item-order-s-4 {
+    order:4;
+  }
+
+  .item-order-s-5 {
+    order:5;
+  }
+
+  .item-order-s-6 {
+    order:6;
+  }
+
+  .item-order-s-7 {
+    order:7;
+  }
+
+  .item-order-s-8 {
+    order:8;
+  }
+
+  .item-order-s-9 {
+    order:9;
+  }
+
+  .item-order-s-10 {
+    order:10;
+  }
+
+  .item-order-s-11 {
+    order:11;
+  }
+
+  .item-order-s-12 {
+    order:12;
+  }
+}
+
+@media (min-width:$bp-m){
+  .item-order-m-0{
+    order:0;
+  }
+  .item-order-m-1 {
+    order:1;
+  }
+
+  .item-order-m-2 {
+    order:2;
+  }
+
+  .item-order-m-3 {
+    order:3;
+  }
+
+  .item-order-m-4 {
+    order:4;
+  }
+
+  .item-order-m-5 {
+    order:5;
+  }
+
+  .item-order-m-6 {
+    order:6;
+  }
+
+  .item-order-m-7 {
+    order:7;
+  }
+
+  .item-order-m-8 {
+    order:8;
+  }
+
+  .item-order-m-9 {
+    order:9;
+  }
+
+  .item-order-m-10 {
+    order:10;
+  }
+
+  .item-order-m-11 {
+    order:11;
+  }
+
+  .item-order-m-12 {
+    order:12;
+  }
+}
+
+@media (min-width:$bp-l){
+  .item-order-l-0{
+    order:0;
+  }
+  .item-order-l-1 {
+    order:1;
+  }
+
+  .item-order-l-2 {
+    order:2;
+  }
+
+  .item-order-l-3 {
+    order:3;
+  }
+
+  .item-order-l-4 {
+    order:4;
+  }
+
+  .item-order-l-5 {
+    order:5;
+  }
+
+  .item-order-l-6 {
+    order:6;
+  }
+
+  .item-order-l-7 {
+    order:7;
+  }
+
+  .item-order-l-8 {
+    order:8;
+  }
+
+  .item-order-l-9 {
+    order:9;
+  }
+
+  .item-order-l-10 {
+    order:10;
+  }
+
+  .item-order-l-11 {
+    order:11;
+  }
+
+  .item-order-l-12 {
+    order:12;
+  }
+}
+
+@media (min-width:$bp-xl){
+  .item-order-xl-0{
+    order:0;
+  }
+  .item-order-xl-1 {
+    order:1;
+  }
+
+  .item-order-xl-2 {
+    order:2;
+  }
+
+  .item-order-xl-3 {
+    order:3;
+  }
+
+  .item-order-xl-4 {
+    order:4;
+  }
+
+  .item-order-xl-5 {
+    order:5;
+  }
+
+  .item-order-xl-6 {
+    order:6;
+  }
+
+  .item-order-xl-7 {
+    order:7;
+  }
+
+  .item-order-xl-8 {
+    order:8;
+  }
+
+  .item-order-xl-9 {
+    order:9;
+  }
+
+  .item-order-xl-10 {
+    order:10;
+  }
+
+  .item-order-xl-11 {
+    order:11;
+  }
+
+  .item-order-xl-12 {
+    order:12;
+  }
+}
+
