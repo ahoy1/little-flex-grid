@@ -12,9 +12,6 @@ $bp-m: 768px;
 $bp-l: 992px;
 $bp-xl: 1200px; */
 
-//gutter width. Gutters make heavy use of the css calc operation. Set your gutter width here once.
-$gutter: 10px;
-
 .container{
   margin:0 auto;
   max-width:100%;
@@ -338,246 +335,246 @@ $gutter: 10px;
         margin:5px 5px;
   }
     .item-xs-1,  {
-    width: calc( (100% / 12) - $gutter);
+    width: calc( (100% / 12) - 10px);
   }
 
   .item-xs-2 {
-    width: calc( (100% / 6) - $gutter);
+    width: calc( (100% / 6) - 10px);
   }
 
   .item-xs-3 {
-    width: calc( 25% - $gutter);
+    width: calc( 25% - 10px);
   }
 
   .item-xs-4 {
-    width: calc( (100% / 3) - $gutter);
+    width: calc( (100% / 3) - 10px);
   }
 
   .item-xs-5 {
-    width: calc( (500% / 12) - $gutter);
+    width: calc( (500% / 12) - 10px);
   }
 
   .item-xs-6 {
-    width: calc( 50% - $gutter);
+    width: calc( 50% - 10px);
   }
 
   .item-xs-7 {
-    width: calc( (700% / 12) - $gutter);
+    width: calc( (700% / 12) - 10px);
   }
 
   .item-xs-8 {
-    width: calc( (800% / 12) - $gutter);
+    width: calc( (800% / 12) - 10px);
   }
 
   .item-xs-9 {
-    width: calc( (900% / 12) - $gutter);
+    width: calc( (900% / 12) - 10px);
   }
 
   .item-xs-10 {
-    width: calc( (1000% / 12) - $gutter);
+    width: calc( (1000% / 12) - 10px);
   }
 
   .item-xs-11 {
-    width: calc( (1100% / 12) - $gutter);
+    width: calc( (1100% / 12) - 10px);
   }
 
   .item-xs-12 {
-    width: calc(100% - $gutter);
+    width: calc(100% - 10px);
   }
   @media(min-width:$bp-s){
     .item-s-1,  {
-      width: calc( (100% / 12) - $gutter);
+      width: calc( (100% / 12) - 10px);
     }
 
     .item-s-2 {
-      width: calc( (100% / 6) - $gutter);
+      width: calc( (100% / 6) - 10px);
     }
 
     .item-s-3 {
-      width: calc( 25% - $gutter);
+      width: calc( 25% - 10px);
     }
 
     .item-s-4 {
-      width: calc( (100% / 3) - $gutter);
+      width: calc( (100% / 3) - 10px);
     }
 
     .item-s-5 {
-      width: calc( (500% / 12) - $gutter);
+      width: calc( (500% / 12) - 10px);
     }
 
     .item-s-6 {
-      width: calc( 50% - $gutter);
+      width: calc( 50% - 10px);
     }
 
     .item-s-7 {
-      width: calc( (700% / 12) - $gutter);
+      width: calc( (700% / 12) - 10px);
     }
 
     .item-s-8 {
-      width: calc( (800% / 12) - $gutter);
+      width: calc( (800% / 12) - 10px);
     }
 
     .item-s-9 {
-      width: calc( (900% / 12) - $gutter);
+      width: calc( (900% / 12) - 10px);
     }
 
     .item-s-10 {
-      width: calc( (1000% / 12) - $gutter);
+      width: calc( (1000% / 12) - 10px);
     }
 
     .item-s-11 {
-      width: calc( (1100% / 12) - $gutter);
+      width: calc( (1100% / 12) - 10px);
     }
 
     .item-s-12 {
-      width: calc(100% - $gutter);
+      width: calc(100% - 10px);
     }
   }
   @media(min-width:$bp-m){
     .item-m-1,  {
-      width: calc( (100% / 12) - $gutter);
+      width: calc( (100% / 12) - 10px);
     }
 
     .item-m-2 {
-      width: calc( (100% / 6) - $gutter);
+      width: calc( (100% / 6) - 10px);
     }
 
     .item-m-3 {
-      width: calc( 25% - $gutter);
+      width: calc( 25% - 10px);
     }
 
     .item-m-4 {
-      width: calc( (100% / 3) - $gutter);
+      width: calc( (100% / 3) - 10px);
     }
 
     .item-m-5 {
-      width: calc( (500% / 12) - $gutter);
+      width: calc( (500% / 12) - 10px);
     }
 
     .item-m-6 {
-      width: calc( 50% - $gutter);
+      width: calc( 50% - 10px);
     }
 
     .item-m-7 {
-      width: calc( (700% / 12) - $gutter);
+      width: calc( (700% / 12) - 10px);
     }
 
     .item-m-8 {
-      width: calc( (800% / 12) - $gutter);
+      width: calc( (800% / 12) - 10px);
     }
 
     .item-m-9 {
-      width: calc( (900% / 12) - $gutter);
+      width: calc( (900% / 12) - 10px);
     }
 
     .item-m-10 {
-      width: calc( (1000% / 12) - $gutter);
+      width: calc( (1000% / 12) - 10px);
     }
 
     .item-m-11 {
-      width: calc( (1100% / 12) - $gutter);
+      width: calc( (1100% / 12) - 10px);
     }
 
     .item-m-12 {
-      width: calc(100% - $gutter);
+      width: calc(100% - 10px);
     }
   }
   @media(min-width:$bp-l){
     .item-l-1,  {
-      width: calc( (100% / 12) - $gutter);
+      width: calc( (100% / 12) - 10px);
     }
 
     .item-l-2 {
-      width: calc( (100% / 6) - $gutter);
+      width: calc( (100% / 6) - 10px);
     }
 
     .item-l-3 {
-      width: calc( 25% - $gutter);
+      width: calc( 25% - 10px);
     }
 
     .item-l-4 {
-      width: calc( (100% / 3) - $gutter);
+      width: calc( (100% / 3) - 10px);
     }
 
     .item-l-5 {
-      width: calc( (500% / 12) - $gutter);
+      width: calc( (500% / 12) - 10px);
     }
 
     .item-l-6 {
-      width: calc( 50% - $gutter);
+      width: calc( 50% - 10px);
     }
 
     .item-l-7 {
-      width: calc( (700% / 12) - $gutter);
+      width: calc( (700% / 12) - 10px);
     }
 
     .item-l-8 {
-      width: calc( (800% / 12) - $gutter);
+      width: calc( (800% / 12) - 10px);
     }
 
     .item-l-9 {
-      width: calc( (900% / 12) - $gutter);
+      width: calc( (900% / 12) - 10px);
     }
 
     .item-l-10 {
-      width: calc( (1000% / 12) - $gutter);
+      width: calc( (1000% / 12) - 10px);
     }
 
     .item-l-11 {
-      width: calc( (1100% / 12) - $gutter);
+      width: calc( (1100% / 12) - 10px);
     }
 
     .item-l-12 {
-      width: calc(100% - $gutter);
+      width: calc(100% - 10px);
     }
   }
   @media(min-width:$bp-xl){
     .item-xl-1,  {
-      width: calc( (100% / 12) - $gutter);
+      width: calc( (100% / 12) - 10px);
     }
 
     .item-xl-2 {
-      width: calc( (100% / 6) - $gutter);
+      width: calc( (100% / 6) - 10px);
     }
 
     .item-xl-3 {
-      width: calc( 25% - $gutter);
+      width: calc( 25% - 10px);
     }
 
     .item-xl-4 {
-      width: calc( (100% / 3) - $gutter);
+      width: calc( (100% / 3) - 10px);
     }
 
     .item-xl-5 {
-      width: calc( (500% / 12) - $gutter);
+      width: calc( (500% / 12) - 10px);
     }
 
     .item-xl-6 {
-      width: calc( 50% - $gutter);
+      width: calc( 50% - 10px);
     }
 
     .item-xl-7 {
-      width: calc( (700% / 12) - $gutter);
+      width: calc( (700% / 12) - 10px);
     }
 
     .item-xl-8 {
-      width: calc( (800% / 12) - $gutter);
+      width: calc( (800% / 12) - 10px);
     }
 
     .item-xl-9 {
-      width: calc( (900% / 12) - $gutter);
+      width: calc( (900% / 12) - 10px);
     }
 
     .item-xl-10 {
-      width: calc( (1000% / 12) - $gutter);
+      width: calc( (1000% / 12) - 10px);
     }
 
     .item-xl-11 {
-      width: calc( (1100% / 12) - $gutter);
+      width: calc( (1100% / 12) - 10px);
     }
 
     .item-xl-12 {
-      width: calc(100% - $gutter);
+      width: calc(100% - 10px);
     }
   }
 }
