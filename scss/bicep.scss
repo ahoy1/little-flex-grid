@@ -21,20 +21,16 @@ $gutter: 10px;
   margin:0 auto;
   max-width:100%;
   @media (min-width:$bp-s){
-    //max-width:490px;
     max-width:$bp-s;
   }
   @media (min-width:$bp-m){
-    //max-width:768px;
     max-width:$bp-m;
   }
   @media (min-width:$bp-l){
-    //max-width:992px;
     max-width:$bp-l;
     
   }
   @media (min-width:$bp-xl){
-    //max-width:1200px;
     max-width:$bp-xl;
   }
 }
@@ -44,11 +40,12 @@ $gutter: 10px;
   width:100%;
 }
 
-.flex {
+.row {
   display:flex;
   flex-direction:row;
   flex-wrap:wrap;
   align-items:stretch;
+  padding:0 1vw;
   
   > *{
     flex-grow:1;
@@ -91,254 +88,254 @@ $gutter: 10px;
   }
 }
 
-//item styles
-[class^="item-"]{
+//column styles
+[class^="col-"]{
   width:100%;
   flex-grow:0;
 }
 
-  .item-xs-1 {
+  .col-xs-1 {
     width: calc(100% / 12);
   }
 
-  .item-xs-2 {
+  .col-xs-2 {
     width: calc(100% / 6);
   }
 
-  .item-xs-3 {
+  .col-xs-3 {
     width: 25%;
   }
 
-  .item-xs-4 {
+  .col-xs-4 {
     width: calc(100% / 3) ;
   }
 
-  .item-xs-5 {
+  .col-xs-5 {
     width: calc(500% / 12);
   }
 
-  .item-xs-6 {
+  .col-xs-6 {
     width: 50%
   }
 
-  .item-xs-7 {
+  .col-xs-7 {
     width: calc(700% / 12);
   }
 
-  .item-xs-8 {
+  .col-xs-8 {
     width: calc(800% / 12);
   }
 
-  .item-xs-9 {
+  .col-xs-9 {
     width: calc(900% / 12);
   }
 
-  .item-xs-10 {
+  .col-xs-10 {
     width: calc(1000% / 12);
   }
 
-  .item-xs-11 {
+  .col-xs-11 {
     width: calc(1100%/ 12);
   }
 
-  .item-xs-12 {
+  .col-xs-12 {
     width:100%;
   }
 
 @media(min-width:$bp-s) {
-  .item-s-1 {
+  .col-sm-1 {
     width: calc(100% / 12);
   }
 
-  .item-s-2 {
+  .col-sm-2 {
     width: calc(100% / 6);
   }
 
-  .item-s-3 {
+  .col-sm-3 {
     width: 25%;
   }
 
-  .item-s-4 {
+  .col-sm-4 {
     width: calc(100% / 3) ;
   }
 
-  .item-s-5 {
+  .col-sm-5 {
     width: calc(500% / 12);
   }
 
-  .item-s-6 {
+  .col-sm-6 {
     width: 50%
   }
 
-  .item-s-7 {
+  .col-sm-7 {
     width: calc(700% / 12);
   }
 
-  .item-s-8 {
+  .col-sm-8 {
     width: calc(800% / 12);
   }
 
-  .item-s-9 {
+  .col-sm-9 {
     width: calc(900% / 12);
   }
 
-  .item-s-10 {
+  .col-sm-10 {
     width: calc(1000% / 12);
   }
 
-  .item-s-11 {
+  .col-sm-11 {
     width: calc(1100%/ 12);
   }
 
-  .item-s-12 {
+  .col-sm-12 {
     width:100%;
   }
 }
 @media(min-width:$bp-m) {
-  .item-m-1 {
+  .col-md-1 {
     width: calc(100% / 12);
   }
 
-  .item-m-2 {
+  .col-md-2 {
     width: calc(100% / 6);
   }
 
-  .item-m-3 {
+  .col-md-3 {
     width: 25%;
   }
 
-  .item-m-4 {
+  .col-md-4 {
     width: calc(100% / 3) ;
   }
 
-  .item-m-5 {
+  .col-md-5 {
     width: calc(500% / 12);
   }
 
-  .item-m-6 {
+  .col-md-6 {
     width: 50%
   }
 
-  .item-m-7 {
+  .col-md-7 {
     width: calc(700% / 12);
   }
 
-  .item-m-8 {
+  .col-md-8 {
     width: calc(800% / 12);
   }
 
-  .item-m-9 {
+  .col-md-9 {
     width: calc(900% / 12);
   }
 
-  .item-m-10 {
+  .col-md-10 {
     width: calc(1000% / 12);
   }
 
-  .item-m-11 {
+  .col-md-11 {
     width: calc(1100%/ 12);
   }
 
-  .item-m-12 {
+  .col-md-12 {
     width:100%;
   }
 }
 @media(min-width:$bp-l) {
-  .item-l-1 {
+  .col-lg-1 {
     width: calc(100% / 12);
   }
 
-  .item-l-2 {
+  .col-lg-2 {
     width: calc(100% / 6);
   }
 
-  .item-l-3 {
+  .col-lg-3 {
     width: 25%;
   }
 
-  .item-l-4 {
+  .col-lg-4 {
     width: calc(100% / 3) ;
   }
 
-  .item-l-5 {
+  .col-lg-5 {
     width: calc(500% / 12);
   }
 
-  .item-l-6 {
+  .col-lg-6 {
     width: 50%
   }
 
-  .item-l-7 {
+  .col-lg-7 {
     width: calc(700% / 12);
   }
 
-  .item-l-8 {
+  .col-lg-8 {
     width: calc(800% / 12);
   }
 
-  .item-l-9 {
+  .col-lg-9 {
     width: calc(900% / 12);
   }
 
-  .item-l-10 {
+  .col-lg-10 {
     width: calc(1000% / 12);
   }
 
-  .item-l-11 {
+  .col-lg-11 {
     width: calc(1100%/ 12);
   }
 
-  .item-l-12 {
+  .col-lg-12 {
     width:100%;
   }
 }
 
 @media(min-width:$bp-xl) {
-  .item-xl-1 {
+  .col-xl-1 {
     width: calc(100% / 12);
   }
 
-  .item-xl-2 {
+  .col-xl-2 {
     width: calc(100% / 6);
   }
 
-  .item-xl-3 {
+  .col-xl-3 {
     width: 25%;
   }
 
-  .item-xl-4 {
+  .col-xl-4 {
     width: calc(100% / 3) ;
   }
 
-  .item-xl-5 {
+  .col-xl-5 {
     width: calc(500% / 12);
   }
 
-  .item-xl-6 {
+  .col-xl-6 {
     width: 50%
   }
 
-  .item-xl-7 {
+  .col-xl-7 {
     width: calc(700% / 12);
   }
 
-  .item-xl-8 {
+  .col-xl-8 {
     width: calc(800% / 12);
   }
 
-  .item-xl-9 {
+  .col-xl-9 {
     width: calc(900% / 12);
   }
 
-  .item-xl-10 {
+  .col-xl-10 {
     width: calc(1000% / 12);
   }
 
-  .item-xl-11 {
+  .col-xl-11 {
     width: calc(1100%/ 12);
   }
 
-  .item-xl-12 {
+  .col-xl-12 {
     width:100%;
   }
 }
@@ -347,514 +344,514 @@ $gutter: 10px;
 //define gutters here. Have to interpolate scss var to work in calc declaration
 //details if youre interested: https://github.com/sass/sass/issues/818
 .gutters {
-  [class^='item-']{
+  [class^='col-']{
         margin:calc(#{$gutter} / 2);
   }
-    .item-xs-1,  {
+  .col-xs-1,  {
     width: calc( (100% / 12) - #{$gutter});
   }
 
-  .item-xs-2 {
+  .col-xs-2 {
     width: calc( (100% / 6) - #{$gutter});
   }
 
-  .item-xs-3 {
+  .col-xs-3 {
     width: calc( 25% - #{$gutter});
   }
 
-  .item-xs-4 {
+  .col-xs-4 {
     width: calc( (100% / 3) - #{$gutter});
   }
 
-  .item-xs-5 {
+  .col-xs-5 {
     width: calc( (500% / 12) - #{$gutter});
   }
 
-  .item-xs-6 {
+  .col-xs-6 {
     width: calc( 50% - #{$gutter});
   }
 
-  .item-xs-7 {
+  .col-xs-7 {
     width: calc( (700% / 12) - #{$gutter});
   }
 
-  .item-xs-8 {
+  .col-xs-8 {
     width: calc( (800% / 12) - #{$gutter});
   }
 
-  .item-xs-9 {
+  .col-xs-9 {
     width: calc( (900% / 12) - #{$gutter});
   }
 
-  .item-xs-10 {
+  .col-xs-10 {
     width: calc( (1000% / 12) - #{$gutter});
   }
 
-  .item-xs-11 {
+  .col-xs-11 {
     width: calc( (1100% / 12) - #{$gutter});
   }
 
-  .item-xs-12 {
+  .col-xs-12 {
     width: calc(100% - #{$gutter});
   }
   @media(min-width:$bp-s){
-    .item-s-1,  {
+    .col-sm-1,  {
       width: calc( (100% / 12) - #{$gutter});
     }
 
-    .item-s-2 {
+    .col-sm-2 {
       width: calc( (100% / 6) - #{$gutter});
     }
 
-    .item-s-3 {
+    .col-sm-3 {
       width: calc( 25% - #{$gutter});
     }
 
-    .item-s-4 {
+    .col-sm-4 {
       width: calc( (100% / 3) - #{$gutter});
     }
 
-    .item-s-5 {
+    .col-sm-5 {
       width: calc( (500% / 12) - #{$gutter});
     }
 
-    .item-s-6 {
+    .col-sm-6 {
       width: calc( 50% - #{$gutter});
     }
 
-    .item-s-7 {
+    .col-sm-7 {
       width: calc( (700% / 12) - #{$gutter});
     }
 
-    .item-s-8 {
+    .col-sm-8 {
       width: calc( (800% / 12) - #{$gutter});
     }
 
-    .item-s-9 {
+    .col-sm-9 {
       width: calc( (900% / 12) - #{$gutter});
     }
 
-    .item-s-10 {
+    .col-sm-10 {
       width: calc( (1000% / 12) - #{$gutter});
     }
 
-    .item-s-11 {
+    .col-sm-11 {
       width: calc( (1100% / 12) - #{$gutter});
     }
 
-    .item-s-12 {
+    .col-sm-12 {
       width: calc(100% - #{$gutter});
     }
   }
   @media(min-width:$bp-m){
-    .item-m-1,  {
+    .col-md-1,  {
       width: calc( (100% / 12) - #{$gutter});
     }
 
-    .item-m-2 {
+    .col-md-2 {
       width: calc( (100% / 6) - #{$gutter});
     }
 
-    .item-m-3 {
+    .col-md-3 {
       width: calc( 25% - #{$gutter});
     }
 
-    .item-m-4 {
+    .col-md-4 {
       width: calc( (100% / 3) - #{$gutter});
     }
 
-    .item-m-5 {
+    .col-md-5 {
       width: calc( (500% / 12) - #{$gutter});
     }
 
-    .item-m-6 {
+    .col-md-6 {
       width: calc( 50% - #{$gutter});
     }
 
-    .item-m-7 {
+    .col-md-7 {
       width: calc( (700% / 12) - #{$gutter});
     }
 
-    .item-m-8 {
+    .col-md-8 {
       width: calc( (800% / 12) - #{$gutter});
     }
 
-    .item-m-9 {
+    .col-md-9 {
       width: calc( (900% / 12) - #{$gutter});
     }
 
-    .item-m-10 {
+    .col-md-10 {
       width: calc( (1000% / 12) - #{$gutter});
     }
 
-    .item-m-11 {
+    .col-md-11 {
       width: calc( (1100% / 12) - #{$gutter});
     }
 
-    .item-m-12 {
+    .col-md-12 {
       width: calc(100% - #{$gutter});
     }
   }
   @media(min-width:$bp-l){
-    .item-l-1,  {
+    .col-lg-1,  {
       width: calc( (100% / 12) - #{$gutter});
     }
 
-    .item-l-2 {
+    .col-lg-2 {
       width: calc( (100% / 6) - #{$gutter});
     }
 
-    .item-l-3 {
+    .col-lg-3 {
       width: calc( 25% - #{$gutter});
     }
 
-    .item-l-4 {
+    .col-lg-4 {
       width: calc( (100% / 3) - #{$gutter});
     }
 
-    .item-l-5 {
+    .col-lg-5 {
       width: calc( (500% / 12) - #{$gutter});
     }
 
-    .item-l-6 {
+    .col-lg-6 {
       width: calc( 50% - #{$gutter});
     }
 
-    .item-l-7 {
+    .col-lg-7 {
       width: calc( (700% / 12) - #{$gutter});
     }
 
-    .item-l-8 {
+    .col-lg-8 {
       width: calc( (800% / 12) - #{$gutter});
     }
 
-    .item-l-9 {
+    .col-lg-9 {
       width: calc( (900% / 12) - #{$gutter});
     }
 
-    .item-l-10 {
+    .col-lg-10 {
       width: calc( (1000% / 12) - #{$gutter});
     }
 
-    .item-l-11 {
+    .col-lg-11 {
       width: calc( (1100% / 12) - #{$gutter});
     }
 
-    .item-l-12 {
+    .col-lg-12 {
       width: calc(100% - #{$gutter});
     }
   }
   @media(min-width:$bp-xl){
-    .item-xl-1,  {
+    .col-xl-1,  {
       width: calc( (100% / 12) - #{$gutter});
     }
 
-    .item-xl-2 {
+    .col-xl-2 {
       width: calc( (100% / 6) - #{$gutter});
     }
 
-    .item-xl-3 {
+    .col-xl-3 {
       width: calc( 25% - #{$gutter});
     }
 
-    .item-xl-4 {
+    .col-xl-4 {
       width: calc( (100% / 3) - #{$gutter});
     }
 
-    .item-xl-5 {
+    .col-xl-5 {
       width: calc( (500% / 12) - #{$gutter});
     }
 
-    .item-xl-6 {
+    .col-xl-6 {
       width: calc( 50% - #{$gutter});
     }
 
-    .item-xl-7 {
+    .col-xl-7 {
       width: calc( (700% / 12) - #{$gutter});
     }
 
-    .item-xl-8 {
+    .col-xl-8 {
       width: calc( (800% / 12) - #{$gutter});
     }
 
-    .item-xl-9 {
+    .col-xl-9 {
       width: calc( (900% / 12) - #{$gutter});
     }
 
-    .item-xl-10 {
+    .col-xl-10 {
       width: calc( (1000% / 12) - #{$gutter});
     }
 
-    .item-xl-11 {
+    .col-xl-11 {
       width: calc( (1100% / 12) - #{$gutter});
     }
 
-    .item-xl-12 {
+    .col-xl-12 {
       width: calc(100% - #{$gutter});
     }
   }
 }
 
-.item-order-xs-0{
+.col-order-xs-0{
   order:0;
 }
 
-.item-order-xs-1 {
+.col-order-xs-1 {
   order:1;
 }
 
-.item-order-xs-2 {
+.col-order-xs-2 {
   order:2;
 }
 
-.item-order-xs-3 {
+.col-order-xs-3 {
   order:3;
 }
 
-.item-order-xs-4 {
+.col-order-xs-4 {
   order:4;
 }
 
-.item-order-xs-5 {
+.col-order-xs-5 {
   order:5;
 }
 
-.item-order-xs-6 {
+.col-order-xs-6 {
   order:6;
 }
 
-.item-order-xs-7 {
+.col-order-xs-7 {
   order:7;
 }
 
-.item-order-xs-8 {
+.col-order-xs-8 {
   order:8;
 }
 
-.item-order-xs-9 {
+.col-order-xs-9 {
   order:9;
 }
 
-.item-order-xs-10 {
+.col-order-xs-10 {
   order:10;
 }
 
-.item-order-xs-11 {
+.col-order-xs-11 {
   order:11;
 }
 
-.item-order-xs-12 {
+.col-order-xs-12 {
   order:12;
 }
 
 @media (min-width:$bp-s){
-  .item-order-x-0{
+  .col-order-x-0{
     order:0;
   }
-  .item-order-s-1 {
+  .col-order-sm-1 {
     order:1;
   }
 
-  .item-order-s-2 {
+  .col-order-sm-2 {
     order:2;
   }
 
-  .item-order-s-3 {
+  .col-order-sm-3 {
     order:3;
   }
 
-  .item-order-s-4 {
+  .col-order-sm-4 {
     order:4;
   }
 
-  .item-order-s-5 {
+  .col-order-sm-5 {
     order:5;
   }
 
-  .item-order-s-6 {
+  .col-order-sm-6 {
     order:6;
   }
 
-  .item-order-s-7 {
+  .col-order-sm-7 {
     order:7;
   }
 
-  .item-order-s-8 {
+  .col-order-sm-8 {
     order:8;
   }
 
-  .item-order-s-9 {
+  .col-order-sm-9 {
     order:9;
   }
 
-  .item-order-s-10 {
+  .col-order-sm-10 {
     order:10;
   }
 
-  .item-order-s-11 {
+  .col-order-sm-11 {
     order:11;
   }
 
-  .item-order-s-12 {
+  .col-order-sm-12 {
     order:12;
   }
 }
 
 @media (min-width:$bp-m){
-  .item-order-m-0{
+  .col-order-md-0{
     order:0;
   }
-  .item-order-m-1 {
+  .col-order-md-1 {
     order:1;
   }
 
-  .item-order-m-2 {
+  .col-order-md-2 {
     order:2;
   }
 
-  .item-order-m-3 {
+  .col-order-md-3 {
     order:3;
   }
 
-  .item-order-m-4 {
+  .col-order-md-4 {
     order:4;
   }
 
-  .item-order-m-5 {
+  .col-order-md-5 {
     order:5;
   }
 
-  .item-order-m-6 {
+  .col-order-md-6 {
     order:6;
   }
 
-  .item-order-m-7 {
+  .col-order-md-7 {
     order:7;
   }
 
-  .item-order-m-8 {
+  .col-order-md-8 {
     order:8;
   }
 
-  .item-order-m-9 {
+  .col-order-md-9 {
     order:9;
   }
 
-  .item-order-m-10 {
+  .col-order-md-10 {
     order:10;
   }
 
-  .item-order-m-11 {
+  .col-order-md-11 {
     order:11;
   }
 
-  .item-order-m-12 {
+  .col-order-md-12 {
     order:12;
   }
 }
 
 @media (min-width:$bp-l){
-  .item-order-l-0{
+  .col-order-lg-0{
     order:0;
   }
-  .item-order-l-1 {
+  .col-order-lg-1 {
     order:1;
   }
 
-  .item-order-l-2 {
+  .col-order-lg-2 {
     order:2;
   }
 
-  .item-order-l-3 {
+  .col-order-lg-3 {
     order:3;
   }
 
-  .item-order-l-4 {
+  .col-order-lg-4 {
     order:4;
   }
 
-  .item-order-l-5 {
+  .col-order-lg-5 {
     order:5;
   }
 
-  .item-order-l-6 {
+  .col-order-lg-6 {
     order:6;
   }
 
-  .item-order-l-7 {
+  .col-order-lg-7 {
     order:7;
   }
 
-  .item-order-l-8 {
+  .col-order-lg-8 {
     order:8;
   }
 
-  .item-order-l-9 {
+  .col-order-lg-9 {
     order:9;
   }
 
-  .item-order-l-10 {
+  .col-order-lg-10 {
     order:10;
   }
 
-  .item-order-l-11 {
+  .col-order-lg-11 {
     order:11;
   }
 
-  .item-order-l-12 {
+  .col-order-lg-12 {
     order:12;
   }
 }
 
 @media (min-width:$bp-xl){
-  .item-order-xl-0{
+  .col-order-xl-0{
     order:0;
   }
-  .item-order-xl-1 {
+  .col-order-xl-1 {
     order:1;
   }
 
-  .item-order-xl-2 {
+  .col-order-xl-2 {
     order:2;
   }
 
-  .item-order-xl-3 {
+  .col-order-xl-3 {
     order:3;
   }
 
-  .item-order-xl-4 {
+  .col-order-xl-4 {
     order:4;
   }
 
-  .item-order-xl-5 {
+  .col-order-xl-5 {
     order:5;
   }
 
-  .item-order-xl-6 {
+  .col-order-xl-6 {
     order:6;
   }
 
-  .item-order-xl-7 {
+  .col-order-xl-7 {
     order:7;
   }
 
-  .item-order-xl-8 {
+  .col-order-xl-8 {
     order:8;
   }
 
-  .item-order-xl-9 {
+  .col-order-xl-9 {
     order:9;
   }
 
-  .item-order-xl-10 {
+  .col-order-xl-10 {
     order:10;
   }
 
-  .item-order-xl-11 {
+  .col-order-xl-11 {
     order:11;
   }
 
-  .item-order-xl-12 {
+  .col-order-xl-12 {
     order:12;
   }
 }
