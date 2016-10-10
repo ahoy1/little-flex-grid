@@ -19,6 +19,7 @@ $gutter: 10px;
 /* containers, like in every other css framework. Fixed width and fluid. */
 .container{
   margin:0 auto;
+  padding:0 1vw;
   max-width:100%;
   @media (min-width:$bp-s){
     max-width:$bp-s;
@@ -45,7 +46,6 @@ $gutter: 10px;
   flex-direction:row;
   flex-wrap:wrap;
   align-items:stretch;
-  padding:0 1vw;
   
   > *{
     flex-grow:1;
@@ -53,10 +53,19 @@ $gutter: 10px;
   }
 
   //helper classes for flex-direction and align-item
+  //all of these get applied to the .row element
   
   &.flex-column {
     flex-direction:column;
   }  
+
+  &.flex-row-reverse{
+    flex-direction: row-reverse;
+  }
+
+  &.flex-column-reverse{
+    flex-direction: column-reverse;
+  }
   
   &.flex-align-center{
     align-items:center;
@@ -339,14 +348,271 @@ $gutter: 10px;
     width:100%;
   }
 }
-//offsets - tbd
+
+//offsets
+
+.col-xs-offset-1 {
+  margin-left: calc(100% / 12);
+}
+
+.col-xs-offset-2 {
+  margin-left: calc(100% / 6);
+}
+
+.col-xs-offset-3 {
+  margin-left: 25%;
+}
+
+.col-xs-offset-4 {
+  margin-left: calc(100% / 3) ;
+}
+
+.col-xs-offset-5 {
+  margin-left: calc(500% / 12);
+}
+
+.col-xs-offset-6 {
+  margin-left: 50%
+}
+
+.col-xs-offset-7 {
+  margin-left: calc(700% / 12);
+}
+
+.col-xs-offset-8 {
+  margin-left: calc(800% / 12);
+}
+
+.col-xs-offset-9 {
+  margin-left: calc(900% / 12);
+}
+
+.col-xs-offset-10 {
+  margin-left: calc(1000% / 12);
+}
+
+.col-xs-offset-11 {
+  margin-left: calc(1100%/ 12);
+}
+
+.col-xs-offset-12 {
+  margin-left:100%;
+}
+
+@media(min-width:$bp-s){
+  .col-sm-offset-1 {
+    margin-left: calc(100% / 12);
+  }
+
+  .col-sm-offset-2 {
+    margin-left: calc(100% / 6);
+  }
+
+  .col-sm-offset-3 {
+    margin-left: 25%;
+  }
+
+  .col-sm-offset-4 {
+    margin-left: calc(100% / 3) ;
+  }
+
+  .col-sm-offset-5 {
+    margin-left: calc(500% / 12);
+  }
+
+  .col-sm-offset-6 {
+    margin-left: 50%
+  }
+
+  .col-sm-offset-7 {
+    margin-left: calc(700% / 12);
+  }
+
+  .col-sm-offset-8 {
+    margin-left: calc(800% / 12);
+  }
+
+  .col-sm-offset-9 {
+    margin-left: calc(900% / 12);
+  }
+
+  .col-sm-offset-10 {
+    margin-left: calc(1000% / 12);
+  }
+
+  .col-sm-offset-11 {
+    margin-left: calc(1100%/ 12);
+  }
+
+  .col-sm-offset-12 {
+    margin-left:100%;
+  }
+}
+
+@media(min-width:$bp-m){
+  .col-md-offset-1 {
+    margin-left: calc(100% / 12);
+  }
+
+  .col-md-offset-2 {
+    margin-left: calc(100% / 6);
+  }
+
+  .col-md-offset-3 {
+    margin-left: 25%;
+  }
+
+  .col-md-offset-4 {
+    margin-left: calc(100% / 3) ;
+  }
+
+  .col-md-offset-5 {
+    margin-left: calc(500% / 12);
+  }
+
+  .col-md-offset-6 {
+    margin-left: 50%
+  }
+
+  .col-md-offset-7 {
+    margin-left: calc(700% / 12);
+  }
+
+  .col-md-offset-8 {
+    margin-left: calc(800% / 12);
+  }
+
+  .col-md-offset-9 {
+    margin-left: calc(900% / 12);
+  }
+
+  .col-md-offset-10 {
+    margin-left: calc(1000% / 12);
+  }
+
+  .col-md-offset-11 {
+    margin-left: calc(1100%/ 12);
+  }
+
+  .col-md-offset-12 {
+    margin-left:100%;
+  }
+}
+
+@media(min-width:$bp-l){
+  .col-lg-offset-1 {
+    margin-left: calc(100% / 12);
+  }
+
+  .col-lg-offset-2 {
+    margin-left: calc(100% / 6);
+  }
+
+  .col-lg-offset-3 {
+    margin-left: 25%;
+  }
+
+  .col-lg-offset-4 {
+    margin-left: calc(100% / 3) ;
+  }
+
+  .col-lg-offset-5 {
+    margin-left: calc(500% / 12);
+  }
+
+  .col-lg-offset-6 {
+    margin-left: 50%
+  }
+
+  .col-lg-offset-7 {
+    margin-left: calc(700% / 12);
+  }
+
+  .col-lg-offset-8 {
+    margin-left: calc(800% / 12);
+  }
+
+  .col-lg-offset-9 {
+    margin-left: calc(900% / 12);
+  }
+
+  .col-lg-offset-10 {
+    margin-left: calc(1000% / 12);
+  }
+
+  .col-lg-offset-11 {
+    margin-left: calc(1100%/ 12);
+  }
+
+  .col-lg-offset-12 {
+    margin-left:100%;
+  }
+}
+
+@media(min-width:$bp-xl){
+  .col-xl-offset-1 {
+    margin-left: calc(100% / 12);
+  }
+
+  .col-xl-offset-2 {
+    margin-left: calc(100% / 6);
+  }
+
+  .col-xl-offset-3 {
+    margin-left: 25%;
+  }
+
+  .col-xl-offset-4 {
+    margin-left: calc(100% / 3) ;
+  }
+
+  .col-xl-offset-5 {
+    margin-left: calc(500% / 12);
+  }
+
+  .col-xl-offset-6 {
+    margin-left: 50%
+  }
+
+  .col-xl-offset-7 {
+    margin-left: calc(700% / 12);
+  }
+
+  .col-xl-offset-8 {
+    margin-left: calc(800% / 12);
+  }
+
+  .col-xl-offset-9 {
+    margin-left: calc(900% / 12);
+  }
+
+  .col-xl-offset-10 {
+    margin-left: calc(1000% / 12);
+  }
+
+  .col-xl-offset-11 {
+    margin-left: calc(1100%/ 12);
+  }
+
+  .col-xl-offset-12 {
+    margin-left:100%;
+  }
+}
+
 
 //define gutters here. Have to interpolate scss var to work in calc declaration
 //details if youre interested: https://github.com/sass/sass/issues/818
 .gutters {
+  margin-left: calc(#{$gutter});
+
   [class^='col-']{
-        margin:calc(#{$gutter} / 2);
+    margin-bottom:calc(#{$gutter});
   }
+
+  [class^='col-']:nth-child(n+1){
+    margin-right:calc(#{$gutter});
+  }
+
   .col-xs-1,  {
     width: calc( (100% / 12) - #{$gutter});
   }
@@ -394,6 +660,7 @@ $gutter: 10px;
   .col-xs-12 {
     width: calc(100% - #{$gutter});
   }
+
   @media(min-width:$bp-s){
     .col-sm-1,  {
       width: calc( (100% / 12) - #{$gutter});
@@ -443,6 +710,7 @@ $gutter: 10px;
       width: calc(100% - #{$gutter});
     }
   }
+
   @media(min-width:$bp-m){
     .col-md-1,  {
       width: calc( (100% / 12) - #{$gutter});
@@ -591,6 +859,9 @@ $gutter: 10px;
     }
   }
 }
+
+//order classes.
+//need to rewrite like "col-sm-order-0" to be consistent with offset classes
 
 .col-order-xs-0{
   order:0;
