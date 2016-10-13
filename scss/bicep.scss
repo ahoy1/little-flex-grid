@@ -19,7 +19,8 @@ $gutter: 10px;
 /* containers, like in every other css framework. Fixed width and fluid. */
 .container{
   margin:0 auto;
-  padding:0 1vw;
+  padding-left:1vw;
+  padding-right:1vw;
   max-width:100%;
   @media (min-width:$bp-s){
     max-width:$bp-s;
